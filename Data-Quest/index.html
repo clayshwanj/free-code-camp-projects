@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Quest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Data Quest</h1>
+    <p id="description">This is a survey first form.</p>
+
+    <div class="flex-container">
+      <form id="survey-form">
+        <label id="name-label" for="name"> Name </label>
+        <input type="text" name="Name" id="name" placeholder="Name" />
+
+        <label id="email-label" for="email"> Email </label>
+        <input type="email" name="Email" id="email" placeholder="Email" />
+
+        <label id="number-label" for="number"> Number </label>
+        <input type="number" name="Number" id="number" placeholder="Number" />
+
+        <div class="select">
+          <p><span>What is your current state?</span></p>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected value="Select Current State">
+              Select Current State
+            </option>
+            <option value="free">Free</option>
+            <option value="basic">Basic</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="radio-buttons">
+            <p>Are you comfortable answering the questions above?</p>
+            <input type="radio" name="user-button" class="input-radio" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="user-button" class="input-radio" />
+            No
+          </label>
+        </div>
+
+        <div>
+          <p><span>What is your citzenship status</span></p>
+          <ul>
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Name"
+                  id="submit"
+                  value="attribute"
+                  class="input"
+                />
+                Native
+              </label>
+            </li>
+
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Email"
+                  id="submit"
+                  value="attribute"
+                  class="input"
+                />
+                Transient
+              </label>
+            </li>
+
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Name"
+                  id="submit"
+                  value="attribute"
+                  class="input"
+                />
+                Dual Citizen
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Comment Here!</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="sub">
+          <button type="submit" id="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
