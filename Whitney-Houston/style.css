@@ -1,0 +1,19 @@
+#title {
+  text-align: center;
+}
+#img-caption {
+  text-align: center;
+}
+img {
+  margin-left: 350px;
+  margin-top: 40px;
+}
+h3 {
+  text-align: center;
+}
+.info {
+  align-items: center;
+}
+.starter {
+  background-color: blanchedalmond;
+}
