@@ -1,0 +1,30 @@
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid rgba(0, 22, 22, 0.4);
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar li {
+  color: rgb(77, 78, 83);
+  position: relative;
+  width: 100%;
+  border-top: 1px solid;
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+body {
+  min-width: 290px;
+  color: rgb(77, 78, 83);
+  background-color: rgb(255, 255, 255);
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}

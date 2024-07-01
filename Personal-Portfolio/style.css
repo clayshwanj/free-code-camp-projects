@@ -1,0 +1,45 @@
+.navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  color: aquamarine;
+  padding-left: 50px;
+}
+.navbar li {
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 21%);
+}
+.heading {
+  color: rgb(37, 139, 105);
+  padding-right: 900px;
+}
+nav h1 {
+  display: inline;
+}
+img {
+  width: 900px;
+  padding-left: 300px;
+}
+.socials li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: inline;
+  text-decoration: none;
+  color: blue;
+  padding-left: 10px;
+}
+.socials {
+  padding-left: 0px;
+}
