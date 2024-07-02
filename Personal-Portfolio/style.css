@@ -1,45 +1,188 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding-left: 0px;
+}
+
+#header-img {
+  max-height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  padding-right: 540px;
+  margin: 0;
+  color: rgb(146, 3, 127);
+}
+
 .navbar ul {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-  display: inline;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
+
+.navbar li {
+  margin-left: 20px;
+}
+
 .navbar a {
   text-decoration: none;
+  color: rgb(94, 44, 212);
   padding: 15px;
-  text-align: center;
-  color: aquamarine;
-  padding-left: 50px;
-}
-.navbar li {
-  float: left;
 }
 
 .navbar a:hover {
-  background-color: hsl(0, 0%, 21%);
+  background-color: #000000;
+  border-radius: 4px;
 }
-.heading {
-  color: rgb(37, 139, 105);
-  padding-right: 900px;
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 20px;
+  /* Added top padding to account for fixed navbar */
 }
-nav h1 {
-  display: inline;
+
+.image-container img {
+  max-width: 90%;
+  height: 5%;
 }
-img {
-  width: 900px;
-  padding-left: 300px;
+
+.projects {
+  display: flex;
+  justify-content: center;
 }
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Socials styles */
+.socials {
+  display: flex;
+  padding-left: 0;
+}
+
 .socials li {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-  display: inline;
-  text-decoration: none;
-  color: blue;
-  padding-left: 10px;
+  margin-right: 10px;
 }
-.socials {
-  padding-left: 0px;
+
+.socials i {
+  font-size: 24px;
+  color: blue;
+}
+
+/* Video styles */
+#video {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+form input[type="email"],
+form input[type="submit"] {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+#submit {
+  background-color: hsl(120, 19%, 42%);
+  border-radius: 30px;
+  width: 200px;
+}
+
+#submit:hover {
+  background-color: hsl(120, 84%, 32%);
+}
+
+footer {
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+  .projects {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

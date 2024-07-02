@@ -11,69 +11,151 @@
     ></script>
   </head>
   <body>
-    <div>
-      <nav class="navbar">
+    <header id="header">
+      <svg
+        class="w-6 h-6 text-gray-800 dark:text-white"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M17.44 3a1 1 0 0 1 .707.293l2.56 2.56a1 1 0 0 1 0 1.414L18.194 9.78 14.22 5.806l2.513-2.513A1 1 0 0 1 17.44 3Zm-4.634 4.22-9.513 9.513a1 1 0 0 0 0 1.414l2.56 2.56a1 1 0 0 0 1.414 0l9.513-9.513-3.974-3.974ZM6 6a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H7v1a1 1 0 1 1-2 0v-1H4a1 1 0 0 1 0-2h1V7a1 1 0 0 1 1-1Zm9 9a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1Z"
+          clip-rule="evenodd"
+        />
+        <path
+          d="M19 13h-2v2h2v-2ZM13 3h-2v2h2V3Zm-2 2H9v2h2V5ZM9 3H7v2h2V3Zm12 8h-2v2h2v-2Zm0 4h-2v2h2v-2Z"
+        />
+      </svg>
+
+      <nav id="nav-bar" class="navbar">
+        <h1 class="heading">Claire Wanjiru</h1>
         <ul>
-          <li><h1 class="heading">Claire Wanjiru</h1></li>
-          <li><a href="About">About</a></li>
-          <li><a href="Work">Work</a></li>
-          <li><a href="Contact">Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
 
-    <div>
-      <img src="claire.jpg" alt="Claire" />
+    <div class="image-container">
+      <img src="port images/claire.jpg" alt="Claire" />
     </div>
 
     <br />
-    <section><h2>About</h2></section>
+    <section id="about"><h2>About</h2></section>
     <p>
-      My name is Claire Wanjiru.I am an aspiring software engineer who is
-      passionate about this field.My motivaton is the eagerness to build
+      My name is Claire Wanjiru. I am an aspiring software engineer who is
+      passionate about this field. My motivation is the eagerness to build
       products that solve everyday problems and make it efficient for people
       while securing them and their personal data from vulnerability to
-      cybercrimes.I`m working to achieve this in order to be an inspiration to
-      the youth especially ladies who think of venturing into the field of IT
-      but are held back for instance, by a certain mindset"It is a male
-      dominated industry and as a lady you`ll struggle too much...".Ladies
-      should remember that 'What a man can do a woman can do better!'.Besides
-      that I would everyone to believe in themselves and believe that they can
-      be who they`ve always dreamed of as long as they work towards their goal
-      determinedly and with a lot focus.
+      cybercrimes. I’m working to achieve this in order to be an inspiration to
+      the youth, especially ladies who think of venturing into the field of IT
+      but are held back by a certain mindset like, "It is a male-dominated
+      industry and as a lady, you’ll struggle too much...". Ladies should
+      remember that "What a man can do, a woman can do better!". Besides that, I
+      would like everyone to believe in themselves and believe that they can be
+      who they’ve always dreamed of as long as they work towards their goal
+      determinedly and with a lot of focus.
     </p>
     <strong>Education</strong>
-    <li>Bachelors Degree in Computer Science.</li>
-    <li>Masters Degree in Data Science and Artificial intelligence.</li>
+    <ul>
+      <li>Bachelor's Degree in Computer Science.</li>
+      <li>Master's Degree in Data Science and Artificial Intelligence.</li>
+    </ul>
 
-    <section><h2>Work</h2></section>
+    <section id="work"><h2>Work</h2></section>
     <h3>Companies I have worked with:</h3>
-    <li>Microsoft</li>
-    <li>Google</li>
-    <li>Amazon</li>
+    <ul>
+      <li>Microsoft</li>
+      <li>Google</li>
+      <li>Amazon</li>
+    </ul>
     <strong>Projects</strong>
+    <p>These are some of my projects.</p>
+    <div class="projects">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="port images/snap1.png"
+              style="width: 250px; height: 200px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Data Quest</h1>
+            <p>This is a survey form.</p>
+          </div>
+        </div>
+      </div>
 
-    <section><h2>Contact</h2></section>
-    <p>Telephone Number:+254 712 345 678.</p>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="port images/snap3.png"
+              style="width: 250px; height: 200px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Royal Pastries</h1>
+            <p>This a product landing page for a bakery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="port images/snap2.png"
+              style="width: 250px; height: 200px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Tech-doc</h1>
+            <p>This is a Technical Documentation page.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="port images/snap4.png"
+              style="width: 250px; height: 200px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Whitney Houston</h1>
+            <p>This is a tribute page for a once super popular Queen of Pop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact"><h2>Contact</h2></section>
+    <p>Telephone Number: +254 712 345 678.</p>
     <p>
-      Email:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
-        >clairewanjiru@gmail.com</a
-      >
+      Email:
+      <a href="mailto:clairewanjiru@gmail.com">clairewanjiru@gmail.com</a>
     </p>
+
     <h3>Explore More</h3>
     <ul class="socials">
       <li>
         <i class="fa-brands fa-facebook"></i>
       </li>
-
       <li>
         <i class="fa-brands fa-square-x-twitter"></i>
       </li>
-
       <li>
         <i class="fa-brands fa-square-instagram"></i>
       </li>
-
       <li>
         <i class="fa-brands fa-youtube"></i>
       </li>
@@ -81,6 +163,36 @@
         <i class="fa-brands fa-linkedin"></i>
       </li>
     </ul>
+
+    <section>
+      <h2>Video</h2>
+      <video id="video" controls>
+        <source
+          src="https://www.youtube.com/watch?v=Z5lGkruGSXs"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+
+    <section>
+      <h2>Subscribe</h2>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+      >
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </section>
+
     <footer>&copy;copyright 2024</footer>
   </body>
 </html>
